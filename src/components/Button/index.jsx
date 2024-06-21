@@ -1,14 +1,12 @@
-const Button = ({children}) =>{
-    return (
-        <>
-            <div className="relative">
-                <input type="file" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"/>
-                <button type="button" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    Choose File
-                </button>
-            </div>
-        </>
-
-    )
-}
-export default Button;
+export const Button = ({ children, disabled, onClick, className, type }) => {
+  return (
+    <button
+      onClick={onClick}
+      type={type}
+      className={`hover:bg-blue-700 min-h-[34px] min-w-[100px] rounded-3xl bg-primary px-2 py-1 text-center disabled:bg-disabled ${className} `}
+      disabled={disabled}
+    >
+      {children}
+    </button>
+  );
+};

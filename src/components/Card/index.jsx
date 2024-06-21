@@ -1,20 +1,29 @@
-import nophoto from "../../assets/i/nophoto.jpg";
-
-const Card = ({image=nophoto, name, position, email, phone}) => {
-    return (
-        <div className={"w-331px p-4 flex flex-col gap-7 justify-center items-center text-center"}>
-            <div >
-                <img className={"rounded-full"} src={image}/>
-            </div>
-            <div>{name}</div>
-            <div className="text-center">
-                <p>{position}</p>
-                <p>{email}</p>
-                <p>{phone}</p>
-            </div>
-        </div>
-    )
-}
-
-
-export default Card;
+export const Card = ({ photo, name, position, email, phone }) => {
+  return (
+    <div
+      className={
+        "flex flex-1 flex-col items-center gap-5 rounded-lg bg-white p-5 text-center text-base"
+      }
+    >
+      <img
+        src={photo}
+        alt={name}
+        className={"h-[70px] w-[70px] rounded-full"}
+      />
+      <p className={"w-[280px] overflow-hidden text-ellipsis text-nowrap"}>
+        {name}
+      </p>
+      <div>
+        <p className={"w-[280px] overflow-hidden text-ellipsis text-nowrap"}>
+          {position}
+        </p>
+        <p className={"w-[280px] overflow-hidden text-ellipsis text-nowrap"}>
+          {email}
+        </p>
+        <p className={"w-[280px] overflow-hidden text-ellipsis text-nowrap"}>
+          {phone}
+        </p>
+      </div>
+    </div>
+  );
+};
