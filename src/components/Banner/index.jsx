@@ -8,15 +8,14 @@ export const Banner = () => {
             }
         >
             <div className={"max-w-[380px] pb-[30px] text-center md:pb-0"}>
-                <h2 className={"mb-5 text-4xl font-normal text-white"}>
-                    Test assignment for front-end developer
+                <h2 className={"mb-5 text-4xl font-normal text-gray"}>
+                    Welcome to BrandMasters
                 </h2>
-                <p className={"mb-8 text-base text-white"}>
-                    What defines a good front-end developer is one that has skilled
-                    knowledge of HTML, CSS, JS with a vast understanding of User design
-                    thinking as they'll be building web interfaces with accessibility in
-                    mind. They should also be excited to learn, as the world of Front-End
-                    Development keeps evolving.
+                <h3 className={" text-disabled"}>The Ultimate Solution for Your Marketing Needs</h3>
+                <p className={"mb-8 text-base text-black"}>
+                    At BrandMasters, we understand that a successful marketing strategy requires more than just expertise;
+                    it demands creativity, innovation, and a deep understanding of your audience.
+
                 </p>
                 <Button>Sign up</Button>
             </div>

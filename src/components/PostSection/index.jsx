@@ -8,7 +8,6 @@ import { API_PATH } from "../../constants";
 
 export const PostSection = () => {
     const methods = useForm({ mode: "onChange" });
-    // debugger
     const {
         handleSubmit,
         formState: { errors, isValid },
@@ -72,7 +71,7 @@ export const PostSection = () => {
                 "mt-16 flex flex-col flex-wrap items-center justify-center gap-7 px-4 pt-[76px]  text-center md:px-8 lg:px-14 "
             }
         >
-            <h2 className={"mb-[22px] text-4xl "}>Working with POST request</h2>
+            <h2 className={"mb-[22px] text-4xl "}>Contact us</h2>
             <FormProvider {...methods}>
                 <form
                     className={"m-x-auto mb-40 flex  w-full max-w-[380px] flex-col"}

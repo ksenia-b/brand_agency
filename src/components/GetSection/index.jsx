@@ -13,6 +13,7 @@ export const GetSection = () => {
     fetch(`${API_PATH}users?page=${page}&count=${USERS_PER_PAGE}`)
       .then((res) => res.json())
       .then((data) => {
+        console.log("data = ", data)
         const existingUserIds = new Set(users.map((user) => user.id));
         const newUsers = data.users.filter(
           (user) => !existingUserIds.has(user.id),
@@ -26,7 +27,7 @@ export const GetSection = () => {
   return (
     <div className={"px-4 pt-[140px] md:px-8  lg:px-14"}>
       <h2 className={"mb-[50px] text-center text-4xl font-normal text-black"}>
-        Working with GET request
+        Our professionals
       </h2>
 
       <div
